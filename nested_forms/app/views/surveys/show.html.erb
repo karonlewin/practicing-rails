@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h2>Survey <%= @survey.title %></h2>
+
+  <% @survey.questions.each_with_index do |question, index| %>
+    <fieldset>
+      <legend>Question <%= index+1 %></legend>
+      - <%= question.title %>
+
+      <fieldset>
+        <legend>Answers</legend>
+        <ul>
+          <% question.answers.each do |answer| %>
+            <li>
+              <%= answer.content %>
+            </li>
+          <% end %>
+        </ul>
+      </fieldset>
+    </fieldset>
+  <% end %>
+
+</p>
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>
