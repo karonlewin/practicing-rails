@@ -3,11 +3,11 @@
   <%= f.label :title %>
   <%= f.text_area :title %>
 
-  <fieldset>
-    <legend>Answers</legend>
-    <%= f.fields_for :answers do |answer| %>
-      <%= render 'answer_fields', f: answer %>
-    <% end %>
-    <%= link_to_add_fields "Add Answer", f, :answers %>
-  </fieldset>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to 'remove', '#', class: 'remove_fields' %>
+
+  <%= f.fields_for :answers do |answer| %>
+    <%= render 'answer_fields', f: answer %>
+  <% end %>
+  <%= link_to_add_fields "Add Answer", f, :answers %>
 </fieldset>

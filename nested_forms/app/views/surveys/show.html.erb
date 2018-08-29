@@ -5,9 +5,7 @@
 
   <% @survey.questions.each_with_index do |question, index| %>
     <fieldset>
-      <legend>Question <%= index+1 %></legend>
-      - <%= question.title %>
-
+      <legend>Question: <%= question.title %></legend>
       <fieldset>
         <legend>Answers</legend>
         <ul>

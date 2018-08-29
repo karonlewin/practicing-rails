@@ -16,11 +16,14 @@
     <%= form.text_area :title, id: :survey_title %>
   </div>
 
-    <%= link_to_add_fields "Add Question", form, :questions %>
     <%= form.fields_for :questions do |question| %>
       <%= render 'question_fields', f: question  %>
     <% end %>
-
+    <br />
+    <br />
+    <%= link_to_add_fields "Add Question", form, :questions %>
+    <br />
+    <br />
 
 
 
