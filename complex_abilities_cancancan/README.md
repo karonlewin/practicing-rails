@@ -1,4 +1,4 @@
-# CANCANCAN COMPLEX ABILITIES
+# Cancancan Complex Abilities
 
 This little project was made to test the Cancancan Gem with more "envolving" permissions.
 
