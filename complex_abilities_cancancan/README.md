@@ -1,4 +1,4 @@
-# README
+# CANCANCAN COMPLEX ABILITIES
 
 This little project was made to test the Cancancan Gem with more "envolving" permissions.
 
