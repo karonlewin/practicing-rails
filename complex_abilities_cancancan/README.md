@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This little project was made to test the Cancancan Gem with more "envolving" permissions.
 
-Things you may want to cover:
+# There are two sectors
 
-* Ruby version
+  - Storage
+  - Factory
 
-* System dependencies
+# User permissions
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - Joseph is the current BOSS from Storage Sector so he can just access issues from Storage
+  - Ana is the old BOSS from Storage Sector so she can't access any issues anymore
+  - Albert is the current general BOSS so he can access all issues
+  - Shirley is the current general EMPLOYEE so she can't access any issues
